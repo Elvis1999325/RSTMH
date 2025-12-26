@@ -1,0 +1,469 @@
+---
+title: 'Assessing the Capacity, Barriers, and Facilitators of the Health Care System to Handle Neglected Tropical Diseases in a Refugee Settlement in Uganda: A Mixed Methods Study'
+  
+author: Elvis Tamale^1,2^, Paddy Derrick Malinga^2^ , Mable Ssebaduka Nabweteme^2^,Celine Ahurira^2^,Conrad Makai^2^,   Kenneth Ssembuze^3^, Patricia Ajeru^4^, Patience Atuhaire^5^
+date: "2025-12-20"
+output:
+  html_document:
+    sansfont: Times New Roman
+    monofont: Times New Roman
+    fontsize: 11pt
+    linestretch: 1.5
+    theme: flatly
+    highlight: tango
+    mainfont: Times New Roman
+    toc: true
+    toc_float: true
+    number_sections: true
+    code_download: true
+    df_print: paged
+    self_contained: true
+    smooth_scroll: true
+---
+
+```{r setup, include=FALSE, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(knitr)
+library(kableExtra)
+library(ggplot2)
+library(tinytex)
+```
+
+**Affiliations**
+
+^1^St Mary’s Hospital Lacor, Gulu city, Uganda. 
+
+^2^Mbarara University of Science and Technology, Mbarara, Uganda. 
+
+^3^Medical Teams International, Portland, USA. 
+
+^4^Kampala International University, Kampala, Uganda.
+
+^5^Makerere University Johns Hopkins University Research Collaboration, Kampala, Uganda 
+
+**Corresponding author** 
+
+Tamale Elvis, St. Mary's Hospital, Lacor, Gulu city, Uganda.
+
+**Corresponding author email** 
+
+elvistamale325@gmail.com. 
+ 
+**Keywords**
+
+Neglected Tropical Diseases, Refugee Settlement, Uganda, Primary Healthcare, Health Workers, Knowledge, Capacity, Schistosomiasis, Soil-Transmitted Helminths. 
+
+## Abstract
+### Background
+Neglected tropical diseases (NTDs) disproportionately affect the world’s poorest communities. Uganda remains highly endemic, with over 40 million people at risk of at least one NTD. Although the World Health Organization recommends integrating NTD services into primary health care (PHC), the readiness of PHC facilities in refugee settings to diagnose and manage common NTDs remains insufficiently documented. This study assessed PHC capacity in Nakivale Refugee Settlement, Uganda, focusing on health workers’ knowledge of soil-transmitted helminths (STHs) and schistosomiasis and the perceived barriers and facilitators to diagnosis, management, and reporting.
+
+### Methods
+We conducted a mixed-methods cross-sectional study using quantitative and qualitative approaches. A pre-tested questionnaire was administered to health workers in Health Centre III (HCIII) and Health Centre IV (HCIV) facilities in Nakivale Refugee Settlement. In-depth interviews were conducted with 22 health workers. Quantitative data were summarized using descriptive statistics (frequencies, percentages, means, and standard deviations). Qualitative data were analyzed using thematic analysis, organized around knowledge, diagnostic and treatment capacity, and system and community-level factors influencing effective NTD service delivery.
+
+### Results
+A total of 150 health workers participated; 60% were female and the mean age was 31.5 years. Most held diplomas or certificates and worked in HCIII facilities. Key capacity gaps were observed: 88% reported no prior training on NTDs and 84% reported no supportive supervision for NTDs. Reporting processes were perceived as challenging: 39% found reporting easy and 38% difficult; 71% reported the NTD reporting form was difficult to complete. Knowledge of NTD subtypes was higher for STHs (hookworm 95%, roundworm 92%, tapeworm 91%) than schistosomiasis (S. haematobium 65%, S. mansoni 58%). Qualitative findings highlighted barriers including limited training, underprioritization of NTDs, stock-outs of diagnostics and medicines, weak reporting infrastructure, and community misconceptions and delayed care-seeking. Facilitators included targeted health worker and community education, integrated outreaches and Mass Drug Administration, strengthened diagnostic capacity, improved WASH, and simplified reporting mechanisms.
+
+### Conclusion
+PHC capacity for NTD diagnosis, management, and reporting in Nakivale Refugee Settlement is constrained by major gaps in NTD-specific training, supportive supervision, reporting usability, and commodity availability. Targeted capacity strengthening, structured supervision, improved supplies, and simplified reporting systems are essential to support integration of NTD services into PHC in refugee settings and accelerate progress toward SDG 3.
+ 
+## Introduction
+Neglected tropical diseases (NTDs) comprise a group of infections caused by parasitic worms, protozoa, or bacteria, affecting over one billion people globally, with another billion at risk [1–7, 8–15]. NTDs disproportionately affect the world’s poorest communities and have substantial consequences for health, wellbeing, and socioeconomic outcomes [2, 16-19]. Africa bears a large share of this burden, with an estimated 600 million cases, particularly among poor rural populations [1–2, 20-21]. Uganda is endemic for multiple NTDs, and over 40 million people are at risk of one or more NTDs targeted by the USAID Act to End NTDs programme [22-23].
+
+Despite their burden, many NTDs are preventable and amenable to control or elimination. The WHO 2021–2030 roadmap outlines targets to eradicate, eliminate, or control 20 NTDs by 2030 [24-25]. WHO and partners increasingly advocate for integrating NTD prevention, diagnosis, and management into primary health care (PHC) systems in endemic countries [26-27]. Such integration can accelerate progress toward multiple Sustainable Development Goals (SDGs), including SDG 3 [24,28-31]. However, evidence from Nigeria, Tanzania, and Burundi indicates persistent gaps in health worker readiness and facility capacity to diagnose and manage NTDs within routine services [1, 32-35].
+
+Refugee settlements present distinct vulnerabilities that can amplify NTD transmission and burden. Overcrowding, limited WASH infrastructure, and constrained access to health services can create conditions conducive to transmission of infections such as schistosomiasis and soil-transmitted helminths (STHs) [36–38]. Nakivale Refugee Settlement is among the largest refugee settlements globally, hosting refugees from multiple nationalities [39-40]. In Nakivale, schistosomiasis and STHs are prevalent, with reported rates of 26.6% and 26.5%, respectively [41]. The increasing refugee population and resource constraints raise critical questions about the capacity of PHC facilities to detect, manage, and report these NTDs effectively. Uganda’s national NTD strategy relies on integrated control programmes [9], yet identified challenges include limited diagnostic capacity, insufficient training, and weak reporting systems [41].
+
+Assessing facility readiness and health worker capacity in refugee settings is essential for establishing a baseline, informing targeted interventions, and tracking progress. This study assessed the capacity, barriers, and facilitators of PHC facilities in Nakivale Refugee Settlement to diagnose and manage STHs and schistosomiasis. 
+
+## Methods
+### Study design and setting
+We conducted a mixed-methods cross-sectional study using quantitative and qualitative approaches to assess health system capacity for NTD diagnosis, management, and reporting in Nakivale Refugee Settlement, southwestern Uganda. Nakivale hosts a diverse refugee population from more than ten countries and is served by multiple PHC facilities. The study focused on eight facilities providing frontline care, specifically Health Centre III (HCIII) and Health Centre IV (HCIV) levels.
+
+### Study population and sampling
+The quantitative component included health workers actively engaged in service delivery at the selected facilities. An initial sample size of 128 was calculated using the modified Kish equation [42–43] for an estimated population of 190 health workers. We applied a finite population correction and added 10% for non-response, yielding a final sample of 150. Participants were recruited consecutively across the eight facilities.
+
+For the qualitative component, we conducted in-depth interviews with 22 purposively selected health workers involved in prevention, diagnosis, treatment, reporting, or management of NTDs. Selection was guided by District Health Officers and facility in-charges, based on role and experience in NTD-related service delivery, and included staff from both HCIII and HCIV facilities.
+
+### Data collection
+Quantitative data were collected using a structured self-administered questionnaire adapted from OpenWHO resources on NTDs. The questionnaire captured sociodemographic characteristics (age, sex, education, cadre, and facility type) and assessed knowledge and experience related to schistosomiasis (S. haematobium and S. mansoni) and STHs (including hookworm, roundworm, tapeworm, flukes). Items addressed recognition of subtypes, clinical presentation, and medications commonly used for management. Additional questions assessed prior training on NTDs, surveillance and reporting training, supportive supervision, familiarity with reporting forms, and perceptions of incentives for reporting.
+
+Qualitative interviews were conducted by trained research team members from 10 April to 15 May 2025, lasting 40–60 minutes (average 45 minutes). Interviews were conducted in English, audio-recorded with consent, and transcribed by two independent team members. The interview guide was informed by relevant literature and explored perceived NTD burden, transmission, diagnosis and management practices, reporting processes, system-level constraints (e.g., diagnostics, medicines, supply chains), community-level barriers, and suggested interventions.
+
+### Operational definition
+For this study, NTDs were defined as schistosomiasis and soil-transmitted helminths (STHs).
+
+### Study variables and knowledge scoring
+Independent variables included age, gender, education level, cadre, and facility type (HCIII/HCIV). Additional independent variables included prior NTD training, surveillance/reporting training, supportive supervision, perceived reporting ease, perceptions about incentives, and whether reporting forms were easy to complete.
+
+The primary outcome was health worker knowledge of symptoms and management of schistosomiasis and STHs. Knowledge items were coded as correct (1) or incorrect (0). Total scores ranged from 0 to 23 and were categorized as high (>16; ≥75%), moderate (12–16; 50–74.9%), or low (<12; <50%).
+
+### Data analysis
+Quantitative data were cleaned in Excel and analyzed in R using descriptive and inferential statistics. Continuous variables were summarized using means, medians, standard deviations, and ranges. Categorical variables were summarized using frequencies and percentages. Multiple-response items were disaggregated and coded. Associations were assessed using chi-square tests or Fisher’s exact tests, as appropriate. Variables with p<0.20 in bivariate analysis were considered for multivariable logistic regression. Statistical significance was set at p<0.05. Results were presented in tables and figures.
+
+Qualitative data were anonymized and analyzed using thematic analysis, following familiarization, coding, theme development, review, definition, and reporting. A codebook was developed and applied across transcripts, with regular team discussions to improve consistency. Trustworthiness was enhanced through member checking and triangulation.
+
+### Ethics statement
+Ethics approval was obtained from Lacor Hospital Institutional Research Ethics Committee (Reference Number: LACOR-2024-362). Written informed consent was obtained from all participants. Participation was voluntary, with the right to withdraw at any time. Confidentiality was maintained throughout.
+
+## Results
+### Demographic characteristics of health workers
+The study involved 150 health workers. The age of respondents ranged from 21 to 61 years. When summarized by gender, females had a median age of 30 years (IQR: 26–35) with a mean age of 31.0 years, while males had a median age of 32 years (IQR: 28–34) with a mean age of 32.3 years.
+
+Table 1 presents baseline demographic characteristics of the health workers. A majority were female (60%, n=90) and 40% were male (n=60). Most respondents worked in Health Centre III facilities (74%, n=111), while 26% (n=39) worked in Health Centre IV facilities. Regarding education level, 46% (n=69) had a diploma, 44% (n=66) had a certificate, and 10% (n=15) had a degree. Cadre distribution showed that the most prevalent positions were enrolled nurses (29%, n=43), enrolled midwives (25%, n=38), and other cadres (23%, n=34), followed by clinical officers (17%, n=26), medical officers (5%, n=7), and medical superintendents (1%, n=2).
+
+```{r,echo=FALSE}
+
+## Import data
+D1 <- read.csv("--Quantitative questionnaire for health workers .csv")
+
+## Rename variables for analysis clarity
+D3 <- D1 %>%
+  rename(
+    timestamp                 = Timestamp,
+    age                       = Age..in.years,
+    Gender                    = Gender,
+    Facility_type             = Type.of.Health.Facility.working.at,
+    Education                 = Education.level.of.the.health.worker,
+    Cadre                     = Position.held.at.health.facility..according.to.MoH.structure.,
+    NTD_training              = Any.previous.training.on.NTDs..soil.transmitted.helminths..schistosomiasis...,
+    S.Hematobium              = Subtypes.of.schistosomiasis...S.Hematobium,
+    S.Mansoni                 = S.Mansoni,
+    Hookworms                 = Subtypes.of.Helminths..Hookworms,
+    Roundworms                = Roundworms,
+    Flatworms                 = Flat.worms,
+    Tapeworms                 = Tape.worms,
+    Flukes                    = Flukes,
+    know_haematobium_symptoms = Knowledge.of.S..Haematobium.symptoms.,
+    know_mansoni_symptoms     = X.Knowledge.on.S..mansoni.symptoms.,
+    know_sth_symptoms         = Knowledge.of.the.presentation.of.STH..hookworm..Ascaris..whipworm.,
+    know_sth_medications      = X.Knowledge.of.medications.used.in.the.management.of.STH.and.schistosomiasis..,
+    Surveillance_training     = Any.previous.training.on.disease.surveillance.reporting,
+    NTD_supervision           = Have.you.ever.been.visited.for.supportive.supervision.for.NTDs,
+    Reporting_ease            = How.easy.do.you.find.the.process.of.reporting.NTDs,
+    Reporting_form_knowledge  = Do.you.know.about.the.NTD.reporting.form,
+    Incentive_effect          = Do.monetary.incentives.promote.reporting.on.NTDs,
+    Reporting_form_easy       = Do.you.find.the.reporting.form.easy.to.fill.in
+  )
+## Summary of age by gender
+ContVar <- aggregate(age ~ Gender, data = D3, FUN = summary)
+ContVar
+
+##Subsetting to descriptive statistics
+Cat<-c("Gender","Facility_type","Education","Cadre")
+
+cat_summaries<-lapply(Cat,function(v){
+  D3 %>%
+    count(.data[[v]])%>%
+    mutate(
+      variable=v,
+      percent=round(100*n/sum(n),1),
+      variable=v) %>%
+    rename(category=1)
+})
+
+
+Cattable<-bind_rows(cat_summaries) %>% 
+  select(variable,category,n,percent)
+
+Table.1<- Cattable %>%
+  kable(col.names=c("Characteristic","Category","Count(N)","Percent(%)"),
+        align=c("l","l","c","c"),
+        digits=c(0,0,0,1),
+        caption="Baseline Characteristics across study sites",
+        booktabs=TRUE)%>%
+  kable_styling(full_width=FALSE, bootstrap_options=c("striped","hover","condesced"))%>%
+  add_header_above(c("Groupings " = 2, "Numbers" = 2))%>%
+  collapse_rows(columns = 1, valign = "top")
+Table.1
+```
+
+### Training, supervision, and NTD reporting processes
+Table 2 summarizes capacity-related system indicators and reporting processes. A major finding was the low prevalence of previous training and supervision related to NTDs. Most respondents reported no previous training on NTDs (88%, n=132), and only 12% (n=18) reported having received prior training. Similarly, 84% (n=126) reported never having received supportive supervision for NTDs, whereas only 16% (n=24) reported that they had been visited for supportive supervision.
+
+Perceived ease of reporting on NTDs varied among health workers. While 39% (n=58) reported that reporting was easy, 38% (n=57) reported it was difficult and 17% (n=25) reported it was very difficult, with only 7% (n=10) reporting it was very easy. Most respondents reported that the NTD reporting form was not easy to complete: 71% (n=107) answered No, while 29% (n=43) answered Yes. Opinions on whether monetary incentives promote reporting were divided: 59% (n=88) reported that incentives do not promote reporting, while 41% (n=62) reported that they do.
+```{r,echo=FALSE}
+Cat1<-c("NTD_training","NTD_supervision","Surveillance_training","Reporting_ease","Reporting_form_knowledge","Incentive_effect","Reporting_form_easy")
+
+cat_summaries2<-lapply(Cat1,function(v){
+  D3 %>%
+    count(.data[[v]])%>%
+    mutate(
+      variable=v,
+      percent=round(100*n/sum(n),1),
+      variable=v) %>%
+    rename(category=1)
+})
+
+Cattable2<-bind_rows(cat_summaries2) %>% 
+  select(variable,category,n,percent)
+
+Table.2<- Cattable2 %>%kable(
+  col.names=c("Characteristic","Category","Count(N)","Percent(%)"),
+  align=c("l","l","c","c"),
+  digits=c(0,0,0,1),
+  caption="Baseline Characteristics across study sites",
+  booktabs=TRUE)%>%
+  kable_styling(full_width=FALSE, bootstrap_options=c("striped","hover","condesced"))%>%
+  add_header_above(c("Groupings " = 2, "Numbers" = 2))%>%
+  collapse_rows(columns = 1, valign = "top")
+Table.2
+```
+
+Health workers reported several deaths attributed to NTDs in recent years, but expressed concern about significant under-reporting in the community. This was often due to delayed diagnoses, refusal of medical treatment, or the preference for religious and traditional healing methods, with symptoms frequently misattributed to non-medical causes like witchcraft (HWs 8, 9, 18). NTD reporting primarily happens through general OPD registers and the HMIS tool (HWs 2, 5, 13). However, the generalized nature of the reporting tools made the identification of the specific STHs and Schistosomiasis difficult. (DHIS tool "should be specific to the type of worms" - HW3).  
+There was a widespread lack of training on NTD coding among health workers, and overall underreporting due to inactive surveillance. There is less financing and budgeting attached to NTDrelated community initiatives (HWs 1, 4, 18). The Ministry of Health's inconsistency in providing training for health workers about how to fill the reporting forms, the lack of motivation and incentives attached to reporting, was also cited by health workers as a hindrance to reporting (HW 21). 
+
+### Factors associated with perceived ease of NTD reporting (Fisher’s exact tests)
+We tested associations between perceived ease of reporting and selected factors using Fisher’s exact test. Reporting ease was significantly associated with facility type (p = 0.035). There was no evidence of association between reporting ease and prior NTD training (p = 0.354) or education level (p = 0.788). Gender showed borderline evidence of association with reporting ease (p = 0.092).
+```{r,echo=FALSE,results='hide'}
+T1<-xtabs(~NTD_training+Reporting_ease,D3)
+fisher.test(T1)
+
+T2<-xtabs(~Facility_type+Reporting_ease,D3)
+fisher.test(T2)
+
+T3<-xtabs(~Gender+Reporting_ease,D3)
+fisher.test(T3)
+
+T4<-xtabs(~Education+Reporting_ease,D3)
+fisher.test(T4)
+```
+
+
+### Knowledge of schistosomiasis and helminth subtypes
+Table 3 summarizes health workers’ knowledge of schistosomiasis and helminth subtypes. Knowledge of common soil-transmitted helminths was high: 94.7% (n=142) reported knowledge of hookworms, 92.0% (n=138) reported knowledge of roundworms, and 91.3% (n=137) reported knowledge of tapeworms. Knowledge was comparatively lower for schistosomiasis subtypes, with 65.3% (n=98) reporting knowledge of S. haematobium and 58.7% (n=88) reporting knowledge of S. mansoni. Knowledge of flatworms and flukes was moderate, with 61.3% (n=92) reporting knowledge of flatworms and 60.7% (n=91) reporting knowledge of flukes.
+```{r,echo=FALSE}
+Know<-c("S.Hematobium","S.Mansoni","Hookworms","Roundworms",
+        "Flatworms","Tapeworms","Flukes")
+Know_summaries<-lapply(Know,function(v){ 
+  D3 %>%
+    count(.data[[v]])%>%
+    mutate(
+      variable=v,
+      percent=round(100*n/sum(n),1),
+      variable=v) %>%
+    rename(category=1)
+})
+Knowtab<-bind_rows(Know_summaries)
+Knowtab<-Knowtab %>% 
+  select(variable,category,n,percent)
+
+Knowtab
+
+Table.3<-Knowtab %>%
+  kable(
+    col.names=c("Subtype","Category","Count(N)","Percent(%)"),
+    align=c("l","l","c","c"),
+    digits=c(0,0,0,1),
+    caption="Knowledge of Shistomiasis and Helminth Subtypes",
+    booktabs=TRUE)%>%
+  kable_styling(bootstrap_options=c("stripped","hover","condesced"),
+                full_width=FALSE)%>% add_header_above(c(" "=2,"Numbers"=2))%>%
+  collapse_rows(columns = 1, valign = "top")
+  
+Table.3
+```
+### Multivariable logistic regression models of knowledge outcomes
+We fitted multivariable logistic regression models to explore factors associated with knowledge of selected NTD subtypes (Model outputs M1–M5).
+
+For knowledge of S. haematobium (Model M1), male gender was associated with higher odds of knowledge (p = 0.013), and having received prior NTD training was also associated with higher odds of knowledge (p = 0.030). Degree-level education showed borderline evidence of association (p = 0.060), while facility type and diploma education were not associated with knowledge in this model.
+
+For knowledge of S. mansoni (Model M2), none of the included predictors (facility type, gender, education level, or prior NTD training) reached statistical significance.
+
+For knowledge of flukes (Model M3) and tapeworms (Model M4), there were no statistically significant associations with facility type, gender, education level, or prior NTD training.
+
+For knowledge of flatworms (Model M5), education level was significantly associated with knowledge: respondents with a degree (p = 0.039) and those with a diploma (p = 0.009) had higher odds of reporting knowledge compared with those with certificate-level education. Facility type showed borderline evidence (p = 0.107), while gender and prior NTD training were not statistically significant in this model.
+```{r,echo=FALSE,results='hide'}
+D3<- D3%>% mutate(across(
+  c("S.Hematobium","S.Mansoni","Gender","Facility_type","Cadre","Education","NTD_training","Flukes","Tapeworms","Roundworms","Flatworms","Hookworms"),as.factor
+))
+
+M1<-glm(S.Hematobium~Facility_type+Gender+Education+NTD_training,D3,family=binomial("logit"))
+summary(M1)
+
+M2<-glm(S.Mansoni~Facility_type+Gender+Education+NTD_training,D3,family=binomial("logit"))
+summary(M2)
+
+M3<-glm(Flukes~Facility_type+Gender+Education+NTD_training,D3,family=binomial("logit"))
+summary(M3)
+
+M4<-glm(Tapeworms~Facility_type+Gender+Education+NTD_training,D3,family=binomial("logit"))
+summary(M4)
+
+M5<-glm(Flatworms~Facility_type+Gender+Education+NTD_training,D3,family=binomial("logit"))
+summary(M5)
+```
+
+## Knowledge of NTDs
+### Knowledge of NTD subtypes and symptoms
+
+Health workers demonstrated strong knowledge of common soil-transmitted helminths, with over 90% recognising hookworms (95%), roundworms (92%), and tapeworms (91%). Knowledge of schistosomiasis was lower, with 65% identifying S. haematobium and 58% identifying S. mansoni. Overall recognition of S. mansoni symptoms (58%) was lower than for S. haematobium (65%). Anaemia (83%) and haematuria (81%) were the most frequently identified symptoms of S. haematobium, while abdominal pain (83%), anaemia (75%), and diarrhoea (75%) were commonly associated with S. mansoni.
+Awareness of STH symptoms was high, with abdominal pain (97%), anaemia (93%), and diarrhoea (84%) most frequently reported. These findings suggest strong familiarity with helminths but comparatively weaker disease-specific knowledge of schistosomiasis, particularly S. mansoni.
+
+### Medication knowledge
+
+Knowledge of standard NTD medications was high: 97% correctly identified albendazole or mebendazole for STHs, 74% recognised praziquantel for schistosomiasis, and 55% identified ivermectin. However, qualitative findings revealed notable gaps in confidence and training. Several health workers acknowledged that NTDs receive less attention than malaria, HIV, and TB, with one noting, “We have concentrated on malaria, HIV, and TB, and we have neglected those diseases” (HW14). This translated into low clinical suspicion: “Once you sit in that clinic, usually what you don't know, you're less likely to think about it” (HW21).
+Despite this, participants accurately described key symptoms, including “abdominal pain… diarrhoea, blood in stool” (HW22) for helminths and “painful urination… hematuria” (HW14) for schistosomiasis. Lake Nakivale was widely perceived as a major transmission source, particularly at lakeshores and landing sites linked to swimming and fishing. Faecal–oral transmission related to poor sanitation, limited handwashing facilities, and cultural resistance to latrine use was also frequently cited. Poverty, including children attending school without shoes, was highlighted as a major driver of exposure.
+Perceived NTD burden varied, with many attributing underestimation to diagnostic and knowledge gaps. As one participant stated, “It may be a burden that is not discovered because of the knowledge gaps” (HW1), while another added, “You can't tell the burden of something that you don't know” (HW21). Intestinal helminths and schistosomiasis were most commonly reported, with one respondent estimating “roughly like 10 intestinal worm cases a month.” Children, teenagers, and fishermen were consistently identified as the most affected groups due to school exposure and frequent contact with Lake Nakivale (HW22, HW9). Participants also linked NTDs to reduced productivity, noting that “a sick person is not productive” (HW21), and described seasonal variations in transmission related to water availability.
+
+### Facilitators and barriers to diagnosis and management Barriers
+
+Health facilities frequently lacked essential diagnostics and supplies, including Kato-Katz kits, reagents, and stool containers, forcing reliance on syndromic diagnosis: “Here we are not doing stool, meaning we are missing out on them” (HW14). NTDs were consistently described as under-prioritised, receiving limited funding and support compared to programmes for HIV and malaria. This affected motivation, with one health worker stating bluntly, “Motivation… is zero per cent” (HW19).
+
+Limited training and low clinical suspicion contributed to frequent misdiagnosis, with NTDs often mistaken for malaria or ulcers. As one participant explained, “Most clinicians are not suspecting… someone complains of abdominal pain and they say it’s ulcers… what you don't know, you're less likely to think about it” (HW21). Community-level barriers were equally prominent. Many patients attributed symptoms to witchcraft and sought traditional remedies first, delaying care: “Poor health-seeking behavior… they usually first try their herbs” (HW21). Low community awareness further compounded delays, as NTDs were described as “not something that we always talk about when we are giving health talks” (HW21).
+
+### Facilitators and suggested interventions
+
+Health workers identified existing community platforms—Village Health Teams, radio programmes, and outreach activities—as key opportunities to integrate NTD education. As HW21 noted, “It is something we can prioritize in all the avenues we do community education, such as VHTs, radios, and outreaches.” Integrated outreach activities and Mass Drug Administration, including routine deworming in schools and markets, were highlighted as effective strategies (HW6). Participants also emphasised the need for refresher trainings and mentorship to improve diagnostic suspicion and clinical confidence (HW21). At the system level, strengthening diagnostic capacity, improving WASH infrastructure, increasing dedicated budgets, and ensuring consistent availability of NTD medicines on essential drug lists were identified as critical priorities (HW17).
+
+## Discussion
+This study quantitatively and qualitatively assessed the capacity of primary healthcare centres in Nakivale Refugee Settlement, Uganda, to diagnose and manage soil-transmitted helminths (STHs) and schistosomiasis. We examined health workers’ knowledge, diagnostic and reporting capacity, and the barriers and facilitators influencing effective case detection and management. Overall, our findings show important gaps in training, supportive supervision, and reporting systems, alongside relatively strong recognition of common helminth subtypes.
+
+NTDs such as schistosomiasis and intestinal helminths remain common in Nakivale Refugee Settlement, reflecting patterns seen in other refugee and lakeshore communities in Uganda [8, 37-38, 41]. Children, teenagers, and fishermen were perceived as most affected due to frequent contact with Lake Nakivale, poor sanitation, open defecation, and lack of footwear, risks that are amplified by poverty and overcrowding. These observations align with evidence from Uganda, Ethiopia, and Bangladesh [21, 36]. In the quantitative findings, knowledge of common helminth subtypes was high, particularly hookworms (95%), roundworms (92%), and tapeworms (91%). Knowledge of schistosomiasis subtypes was comparatively lower, with 65% reporting knowledge of S. haematobium and 59% reporting knowledge of S. mansoni, suggesting persistent disease-specific gaps consistent with prior work in the region [32–33, 37].
+
+Capacity gaps were most evident in training, supervision, and reporting. Only 12% of participants reported prior NTD training, and 88% had never received formal instruction, relying on informal learning. Training in surveillance and reporting was similarly limited, and supportive supervision was uncommon, with 84% reporting they had never been visited for NTD supportive supervision. These findings mirror capacity gaps reported in Burundi and Tanzania, and remain below levels described in Nigeria, where more routine training and stronger reporting accountability have been noted [1, 32–35]. Reporting systems were also a challenge: nearly three-quarters reported that the reporting form was difficult to complete, and qualitative findings reinforced concerns about non-specific registers, unclear procedures, limited Ministry of Health support, weak incentives, and inactive surveillance—factors that collectively contribute to underdiagnosis and underreporting [43]. In our quantitative analysis, perceived reporting ease differed by facility type (p=0.035), while associations with NTD training, education level, and gender did not reach conventional significance thresholds.
+
+The multivariable models further support the training and knowledge reinforcement gap. Male gender and prior NTD training were associated with higher odds of reporting knowledge of S. haematobium, while predictors were not significant for S. Mansoni. Education was associated with knowledge of flatworms, with higher odds among diploma and degree holders. These findings suggest that both targeted NTD training and broader educational exposure may influence knowledge for some subtypes, but not uniformly across NTD categories, reinforcing the need for structured, subtype-specific capacity building.
+
+Qualitative findings highlighted interconnected barriers at system, clinical, and community levels. Health facilities faced chronic shortages of essential diagnostic supplies and medicines, leading to reliance on clinical judgement and increasing the risk of misdiagnosis. There was under-prioritisation of NTDs relative to HIV, malaria, and TB reflected by the constrained budgets, reduced motivation, and limited consistent commodity supply. Clinicians described a low index of suspicion, noting that NTDs are less likely to be considered when training and refresher education are absent. At community level, delayed care-seeking was linked to poverty, limited awareness, and cultural beliefs, including reliance on traditional healers and misattribution of symptoms to witchcraft. Together, these factors sustain a cycle of neglect and late presentation with worse outcomes.
+
+Despite these constraints, health workers identified feasible facilitators that can be strengthened within existing systems. They emphasised integrating NTD content into routine community education through Village Health Teams, radio programming, and outreach activities to improve awareness and timely care-seeking [44-45]. Integrated outreaches and Mass Drug Administration platforms were viewed as effective for both prevention and treatment delivery in schools, markets, and other community gathering points. At facility level, respondents prioritised refresher trainings, mentorship, and supportive supervision to improve diagnostic confidence and reporting practices. Alongside strengthening laboratory capacity, investing in WASH infrastructure, advocating for dedicated NTD budgets, and ensuring availability of essential medicines were more suggested targeted interventions.
+
+Strengths of this study include its mixed-methods design in a highly vulnerable refugee setting and the integration of quantitative estimates with frontline explanatory accounts. Limitations include reliance on self-reported knowledge and perceptions, which may introduce recall or social desirability bias, and the lack of direct facility-level verification of diagnostic tools and medicine stocks. As a cross-sectional study, findings reflect a snapshot and cannot capture changes over time.
+
+To improve NTD capacity in refugee PHC settings, interventions should prioritise regular NTD-specific training, structured supportive supervision, and simplification of reporting systems, including consideration of more user-friendly or digital reporting mechanisms to improve completeness and accuracy. Strengthening diagnostic supplies and essential medicine availability, alongside sustained community sensitisation and integrated outreach approaches, would further support earlier detection and effective management.
+
+In conclusion, primary healthcare services in Nakivale Refugee Settlement face substantial constraints in their capacity to manage NTDs. While health workers demonstrate foundational knowledge of common helminth subtypes, this knowledge is not adequately supported by formal training, consistent supervision, or functional reporting systems. Addressing these gaps is essential to strengthen surveillance and case management and to improve NTD outcomes among refugee populations.
+
+## List of abbreviations 
+
+NTDs: Neglected Tropical Diseases 
+
+PHC: Primary healthcare 
+
+WHO: World Health Organization
+
+HCIII: Health Centre III 
+
+HCIV: Health Centre IV 
+
+SD: Standard deviation 
+
+STH: Soil-Transmitted Helminths 
+
+SDG: Sustainable Development Goal 
+
+MOE: Margin of Error 
+
+USAID: United States Agency for International Development 
+
+## Declarations 
+### Ethics approval and consent to participate 
+Following the Declaration of Helsinki, Ethics approval for this study was obtained from the Lacor Hospital Institutional Research Ethics Committee, Reference Number [LACOR-2024-362]. Informed consent was obtained from all participants before data collection. 
+Consent for publication: Not applicable 
+
+### Availability of data and materials
+The datasets generated and/or analyzed during the current study are not publicly available owing to the sensitive nature of participant data and to maintain participant anonymity but are available from the corresponding author upon reasonable request. 
+
+### Competing interests
+The authors declare that they have no competing interests. 
+
+### Funding
+This study was funded by an early-career grant from the Royal Society of Tropical Medicine and Hygiene (RSTMH). 
+
+### Authors' contributions
+TEs conceived the study, participated in its design and coordination, and helped draft the manuscript. AP and MPD participated in the study design, performed the statistical analysis, and drafted the manuscript. NMS, AC, MC, SK, AP, and MPD participated in data collection and interpretation. All the authors have read and approved the final manuscript. 
+
+### Acknowledgments
+The authors would like to thank the health workers in Nakivale Refugee Settlement for their participation in this study. We also extend our gratitude to Medical Teams International for their assistance during data collection. We also extend gratitude to the RSTMH early career grant funding, which facilitated the research process. 
+ 
+### References 
+1. Emeto, D. C., et al. (2021). Recognition and reporting of neglected tropical diseases by primary health care workers in Ibadan, Nigeria. Pan African Medical Journal, 38. https://doi.org/10.11604/pamj.2021.38.224.20576
+
+2. Molyneux, D. H., Savioli, L., & Engels, D. (2017). Neglected tropical diseases: Progress toward addressing the chronic pandemic. The Lancet, 389(10066), 312–325. https://doi.org/10.1016/S0140-6736(16)30171-4
+
+3. Ochola, E. A., Elliott, S. J., & Karanja, D. M. S. (2021). The impact of neglected tropical diseases (NTDs) on women’s health and wellbeing in Sub-Saharan Africa (SSA): A case study of Kenya. International Journal of Environmental Research and Public Health, 18, 2180. https://doi.org/10.3390/ijerph18042180
+
+4. Ojja, S., et al. (2018). Prevalence, intensity and factors associated with soil-transmitted helminths infections among preschool-age children in Hoima district, rural western Uganda. BMC Infectious Diseases, 18(1), 1–12. https://doi.org/10.1186/S12879-018-3289-0
+
+5. World Health Organization. (2017). Integrating neglected tropical diseases into global health and development: Fourth WHO report on neglected tropical diseases. World Health Organization.
+
+6. World Health Organization. (2013). Implementation tools: Package of essential noncommunicable disease interventions. Geneva, Switzerland: World Health Organization.
+
+7. World Health Organization. (2015). Investing to overcome the global impact of neglected tropical diseases. (Accessed July 1, 2025).
+
+8. World Health Organization. (n.d.). Neglected tropical diseases. (Accessed July 1, 2025).
+
+9. Hotez, P. J. (2008). Neglected tropical diseases in the Anthropocene: The case for a new paradigm. PLoS Neglected Tropical Diseases, 2(10), e320.
+
+10. Hotez, P. J., & Molyneux, D. H. (2008). Tropical diseases in the 21st century: The neglected diseases of neglected populations. PLoS Neglected Tropical Diseases, 2(10), e320.
+
+11. Hotez, P. J., Molyneux, D. H., Fenwick, A., Kumaresan, J., Sachs, S. E., Sachs, J. D., & Savioli, L. (2007). Control of neglected tropical diseases. New England Journal of Medicine, 357(10), 1018–1027.
+
+12. Hotez, P. J., Molyneux, D. H., Fenwick, A., Ottesen, E., Ehrlich Sachs, S., & Sachs, J. D. (2006). Incorporating a rapid-impact package of neglected tropical diseases control into AIDS, tuberculosis, and malaria control efforts: Opportunities for “de-neglecting” the neglected tropical diseases. PLoS Medicine, 3(5), e102.
+
+13. Molyneux, D. H., Hotez, P. J., & Fenwick, A. (2005). Rapid-impact interventions: How a policy of integrated control for neglected tropical diseases could benefit the poor. PLoS Medicine, 2(11), e336.
+
+14. Hotez, P. J., Molyneux, D. H., & Fenwick, A. (2007). Neglected tropical diseases: The ancient afflictions of stigma and poverty. PLoS Neglected Tropical Diseases, 1(1), e11.
+
+15. Hotez, P. J. (2007). The global burden of neglected tropical diseases. PLoS Neglected Tropical Diseases, 1(1), e1.
+
+16. Kolaczinski, J. H., Onapa, A. W., Kabatereine, N. B., Ndyomugyenyi, R., Kakembo, A. S. L., & Brooker, S. (2006). Neglected tropical diseases and their control in Uganda: Situation analysis and needs assessment.
+
+17. Lenk, E. J., et al. (2016). Productivity loss related to neglected tropical diseases eligible for preventive chemotherapy: A systematic literature review. PLoS Neglected Tropical Diseases, 10(2), e0004397. https://doi.org/10.1371/journal.pntd.0004397
+
+18. Ortu, G., & Williams, O. (2017). Neglected tropical diseases: Exploring long term practical approaches to achieve sustainable disease elimination and beyond. Infectious Diseases of Poverty, 6(1), 1–12. https://doi.org/10.1186/s40249-017-0361-8
+
+19. Molyneux, D. H., Hotez, P. J., & Fenwick, A. (2009). Neglected tropical diseases and the Millennium Development Goals: Why the “bottom billion” cannot be forgotten. The Lancet, 373(9670), 1570–1572.
+
+20. Stolk, W. A., et al. (2016). Between-country inequalities in the neglected tropical disease burden in 1990 and 2010, with projections for 2020. PLoS Neglected Tropical Diseases, 10(5), e0004560. https://doi.org/10.1371/journal.pntd.0004560
+
+21. Hotez, P. J., Molyneux, D. H., Fenwick, A., & Savioli, L. (2009). Neglected tropical diseases in Africa: The case for a new paradigm. PLoS Neglected Tropical Diseases, 3(9), e486.
+
+22. ACT to End NTDs | East. (2022). Uganda | Act to End NTDs. (Accessed July 4, 2025).
+
+23. USAID. (n.d.). Act to End NTDs | East: Uganda. (Accessed July 2, 2025).
+
+24. World Health Organization. (2021). Ending the neglect to attain the Sustainable Development Goals: A road map for neglected tropical diseases 2021–2030. World Health Organization.
+
+25. World Health Organization. (2020). Ending the neglect to attain the Sustainable Development Goals: A road map for neglected tropical diseases 2021–2030. (Accessed July 2, 2025).
+
+26. Hotez, P. J., & Aksoy, S. (2018). Integrating neglected tropical diseases into primary health care. The Lancet Global Health, 6(1), e2–e3.
+
+27. World Health Organization. (2010). Working to overcome the global impact of neglected tropical diseases: First WHO report on neglected tropical diseases. World Health Organization.
+
+28. Vega, J. (2013). Universal health coverage: The post-2015 development agenda. The Lancet, 381, 179–180. https://doi.org/10.1016/S0140-6736(13)60062-8
+
+29. Bangert, M., Molyneux, D. H., Lindsay, S. W., et al. (2017). The cross-cutting contribution of the end of neglected tropical diseases to the Sustainable Development Goals. Infectious Diseases of Poverty, 6, 73. https://doi.org/10.1186/s40249-017-0288-0
+
+30. World Health Organization. (2017). Ending the neglect to attain the Sustainable Development Goals: A road map for neglected tropical diseases 2021–2030. World Health Organization.
+
+31. World Health Organization. (2012). Accelerating work to overcome the global impact of neglected tropical diseases: A roadmap for implementation. (Accessed July 2, 2025).
+
+32. Bizimana, P., et al. (2018). Capacity gaps in health facilities for case management of intestinal schistosomiasis and soil-transmitted helminthiasis in Burundi. Infectious Diseases of Poverty, 7(1), 1–9. https://doi.org/10.1186/s40249-018-0447-y
+
+33. Mazigo, H. D., et al. (2021). Primary health care facilities capacity gaps regarding diagnosis, treatment and knowledge of schistosomiasis among healthcare workers in Northwestern Tanzania: A call to strengthen the horizontal system. BMC Health Services Research, 21(1), 1–9. https://doi.org/10.1186/s12913-021-06531-z
+
+34. Okello, A. L., Nsereko, V., & Ocan, M. (2016). Knowledge, attitudes and practices of health workers on neglected tropical diseases in selected health facilities in Uganda. Journal of Public Health in Africa, 7(1), 517.
+
+35. Mfinanga, S. G., Mmbaga, E. J., & Mchome, S. (2017). Knowledge, attitudes and practices of health care workers on selected neglected tropical diseases in Tanzania. PLoS Neglected Tropical Diseases, 11(11), e0006009.
+
+36. Kouadio, I. K., Kamigaki, T., & Oshitani, H. (2010). Measles outbreaks in displaced populations: A review of transmission, morbidity and mortality associated factors. BMC International Health and Human Rights, 10, 5. https://doi.org/10.1186/1472-698X-10-5
+
+37. Spiegel, P. B., Checchi, F., Colombo, S., & Paik, E. (2010). Health-care needs of people affected by conflict: Future trends and changing frameworks. The Lancet, 375(9711), 341–345. https://doi.org/10.1016/S0140-6736(09)61873-0
+
+38. Doocy, S., Lyles, E., Roberton, T., et al. (2015). Prevalence and care-seeking for chronic diseases among Syrian refugees in Jordan. BMC Public Health, 15, 1097. https://doi.org/10.1186/s12889-015-2429-3
+
+39. UNHCR. (2021). UNHCR report. (Accessed July 1, 2025).
+
+40. UNHCR. (n.d.). Uganda refugee statistics. (Accessed July 3, 2025).
+
+41. Ministry of Health Uganda. (2020). Sustainability plan for neglected tropical diseases control program. (Accessed July 2, 2025).
+
+42. Kish, L. (1965). Survey sampling. Wiley.
+
+43. Singh, A., & Masuku, M. (2014). Sampling techniques and determination of sample size in applied statistics research: An overview. International Journal of Commerce and Management, 2(11), 1–22.
+
+44. Zaizay, E. G., Joefay, F., & Dennis, D. (2023). Creating a network of people affected by neglected tropical diseases in Liberia: The same secret we were keeping, they are keeping it, too. International Health, 15(Supplement_3), iii10–iii11.
+
+45. Hofstraat, K., & van Brakel, W. H. (2016). Social stigma towards neglected tropical diseases: A systematic review. International Health, 8(suppl_1), i53–i70.
