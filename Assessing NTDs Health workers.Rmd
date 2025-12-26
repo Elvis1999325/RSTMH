@@ -1,7 +1,7 @@
 ---
 title: 'Assessing the Capacity, Barriers, and Facilitators of the Health Care System to Handle Neglected Tropical Diseases in a Refugee Settlement in Uganda: A Mixed Methods Study'
   
-author: Elvis Tamale^1,2^, Paddy Derrick Malinga^2^ , Mable Ssebaduka Nabweteme^2^,Celine Ahurira^2^,Conrad Makai^2^,   Kenneth Ssembuze^3^, Patricia Ajeru^4^, Patience Atuhaire^5^
+author: Elvis Tamale^1,2,6^, Paddy Derrick Malinga^2^ , Mable Ssebaduka Nabweteme^2^,Celine Ahurira^2^,Conrad Makai^2^,   Kenneth Ssembuze^3^, Patricia Ajeru^4^, Patience Atuhaire^5^
 date: "2025-12-20"
 output:
   html_document:
@@ -41,6 +41,8 @@ library(tinytex)
 ^4^Kampala International University, Kampala, Uganda.
 
 ^5^Makerere University Johns Hopkins University Research Collaboration, Kampala, Uganda 
+
+^6^University of Cambridge, Cambridge,UK.
 
 **Corresponding author** 
 
